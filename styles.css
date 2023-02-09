@@ -37,7 +37,23 @@ body {
     margin-bottom: 10px;
     padding: 5px;
     font-size: 18px;
+    cursor: pointer;
 }
+#usrInp{
+    text-align: end;
+    font-size: 35px;
+    background-color: #23272a;
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+}
+#usrInp::placeholder{
+    font-size: 35px;
+}
+#usrInp:focus{
+    outline: none;
+}
+
 .buttons {
     display: grid;
     grid-template-columns: repeat(4,auto);

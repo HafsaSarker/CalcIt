@@ -1,14 +1,24 @@
-let btn = document.querySelectorAll('.btns');
-let test = document.querySelector('.btns')
-console.log(test.dataset.num);
+const numBtn = document.querySelectorAll('[data-num]');
+const opBtn = document.querySelectorAll('[data-op]');
+const clear = document.querySelector('[data-clear]');
+const equalBtn = document.querySelector('[data-equals]');
+let inpField = document.getElementById('usrInp');
+//console.log(numBtn.dataset.num.value);
 
-// btn.forEach(btn => {
-//     btn.onclick = () => displayInp(btn.value);
-// })
+numBtn.forEach(numBtn => {
+    numBtn.onclick = () => displayInp(numBtn.dataset.num);
+})
 
-// function displayInp(data) {
-//     let inpField = document.getElementById('input');
-//     console.log(data);        
-//     inpField.innerText = data;
-// }
+opBtn.forEach(opBtn => {
+  opBtn.onclick = () => displayInp(opBtn.dataset.op);
+})
+
+clear.addEventListener("click", () => {
+  inpField.value = "";
+})
+function displayInp(data) {
+    console.log(data);        
+    inpField.value += data;
+}
+
 
