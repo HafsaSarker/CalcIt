@@ -43,7 +43,7 @@ body {
     grid-template-columns: repeat(4,auto);
 }
 
-#btns{
+.btns{
     padding: 10px 15px;
     cursor: pointer;
     font-size: 18px;
